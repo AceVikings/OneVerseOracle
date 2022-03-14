@@ -19,7 +19,7 @@ contract PriceSigner is EIP712{
         
     }
 
-    function getSigner(Price memory result) internal view returns(address){
+    function getSigner(Price memory result) public view returns(address){
         return _verify(result);
     }
   
